@@ -7,8 +7,8 @@ import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:melohub/firebase_options.dart';
 import 'package:melohub/presentation/choose_mode/bloc/theme_cubit.dart';
 import 'package:melohub/presentation/splash/pages/splash.dart';
+import 'package:melohub/service_locator.dart';
 import 'package:path_provider/path_provider.dart';
-
 import 'core/configs/theme/app_theme.dart';
 
 Future<void> main() async {
@@ -24,6 +24,7 @@ Future<void> main() async {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light.copyWith(
     statusBarColor: Colors.transparent, // transparent status bar if needed
   ));
+  await initializeDependencies();
   runApp(const MyApp());
 }
 

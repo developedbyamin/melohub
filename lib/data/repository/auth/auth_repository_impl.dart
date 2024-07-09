@@ -1,4 +1,7 @@
+import 'package:melohub/data/sources/auth/auth_firebase_service.dart';
 import 'package:melohub/domain/repository/auth/auth.dart';
+
+import '../../../service_locator.dart';
 
 class AuthRepositoryImpl extends AuthRepository{
   @override
@@ -8,9 +11,8 @@ class AuthRepositoryImpl extends AuthRepository{
   }
 
   @override
-  Future<void> signUp() {
-    // TODO: implement signUp
-    throw UnimplementedError();
+  Future<void> signUp() async {
+    // await sl<AuthFirebaseService>().signUp(createUserReq);
   }
 
 }
