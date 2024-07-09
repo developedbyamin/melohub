@@ -37,7 +37,7 @@ ios/Pods/
 ios/Flutter/Debug.xcconfig
 ios/Flutter/Release.xcconfig
 ios/Runner/GoogleService-Info.plist
-firebase_options
+lib/firebase_options
 
 # Android Studio will place build artifacts here
 /android/app/debug
